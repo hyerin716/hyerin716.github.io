@@ -1,0 +1,748 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+	.fontRed {
+		color: #6799FF;
+		font-weight: bold;
+	}
+</style>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>김혜린_Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+	crossorigin="anonymous">
+<link
+	href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap"
+	rel="stylesheet">
+
+<!-- Animate.css -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- Icomoon Icon Fonts-->
+<link rel="stylesheet" href="css/icomoon.css">
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- Flexslider  -->
+<link rel="stylesheet" href="css/flexslider.css">
+<!-- Flaticons  -->
+<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+<!-- Owl Carousel -->
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<!-- Theme style  -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Modernizr JS -->
+<script src="js/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+<style>
+		.b-title{
+			font-family:'Pretendard-SemiBold';
+			font-size: 17px;
+    		color: black;
+
+		}
+
+		.s-title{
+			font-family:'Pretendard-SemiBold';
+			font-size: 17px;
+			color: #6799FF;
+		}
+		.custom-t {
+			font-family: Quicksand, Arial, sans-serif;
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 1.8;
+			color: black;
+		}
+		.image-container {
+			width: 90%; /* 이미지 크기 유지 */
+			height: 70%; /* 이미지 크기 유지 */
+			overflow: hidden; /* 내부 내용이 넘칠 때 숨기기 */
+			position: relative;
+			display: inline-block; /* 기본 크기 유지 */
+		}
+
+		.hover-effect {
+			transition: transform 0.3s ease; /* 확대 효과 */
+			width: 100%;
+			height: 100%;
+			object-fit: cover; /* 이미지 비율에 맞게 채우기 */
+		}
+
+		.image-container::before {
+			content: ''; /* 가상 요소 추가 */
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(128, 128, 128, 0.5); /* 회색 배경 */
+			opacity: 0; /* 기본적으로 보이지 않음 */
+			transition: opacity 0.3s ease; /* 서서히 나타나게 */
+			z-index: 1;
+		}
+
+		.image-container:hover .hover-effect {
+			transform: scale(1.1); /* 내부 이미지 확대 */
+		}
+
+		.image-container:hover::before {
+			opacity: 1; /* 마우스 올리면 회색 오버레이가 보이게 */
+		}
+		/* 마우스 오버시 스타일 */
+		.btn-primary:hover {
+			background-color: transparent;  /* 배경색은 투명 유지 */
+			border-color: #00bfff;  /* 하늘색 테두리 */
+			color: #00bfff;  /* 하늘색 텍스트 */
+		}
+</style>
+</head>
+<body>
+	<div id="colorlib-page">
+		<div class="container-wrap">
+			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"
+				data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+				aria-controls="navbar"><i></i></a>
+			<aside id="colorlib-aside" role="complementary" class="border js-fullheight" style="height: 593px;">
+				<div class="text-center">
+					<div class="author-img" style="background-image: url(images/증명사진.jpg);"></div>
+					<h1 id="colorlib-logo">
+						<a href="index.html">HYERIN KIM</a>
+					</h1>
+					<!--<span style="color: #999999; font-size: 0.9em;">김혜린</span>-->
+					<span class="position">Back End & Web Developer</span>
+				</div>
+				<nav id="colorlib-main-menu" role="navigation" class="navbar">
+					<div id="navbar" class="collapse">
+						<ul>
+							<li class="active"><a href="#" data-nav-section="about">About</a></li>
+							<li class=""><a href="#" data-nav-section="skills">Skills</a></li>
+							<li class=""><a href="#" data-nav-section="resume">Resume</a></li>
+							<li class=""><a href="#" data-nav-section="project">Project</a></li>
+						</ul>
+					</div>
+				</nav>
+			</aside>
+
+			<div id="colorlib-main">
+				<!-- ABOUT SECTION -->
+				<section class="colorlib-about" data-section="about">
+					<div class="colorlib-narrow-content">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+									<div class="col-md-12">
+										<div class="about-desc">
+											<span class="heading-meta">About Me</span>
+											<h2 class="colorlib-heading">Introduce</h2>
+											<p>
+												<strong>
+													목표를 위해 달리는 개발자. <br>
+													끊임없이 도전하는 개발자가되겠습니다.
+												</strong>
+											</p>
+											<br>
+											<!-- Left Column -->
+											<div class="col-md-6">
+												<p>
+													Name &nbsp;&nbsp;<strong>김혜린</strong>
+												</p>
+												<p>
+													Birth &nbsp;&nbsp;<strong>1999.07.16</strong>
+												</p>
+												<p>
+													Phone &nbsp;&nbsp;<strong>010 4178 5530</strong>
+												</p>
+												<p>
+													Email &nbsp;&nbsp;<strong>kimhr716@naver.com</strong>
+												</p>
+												<p>
+													Github &nbsp;&nbsp;<a href="https://github.com/hyerin716"><strong>https://github.com/hyerin716</strong></a>
+												</p>
+												<p>
+													Major &nbsp;&nbsp;<strong>순천향대학교 의료IT공학과</strong>
+												</p>
+											</div>
+											<!-- Right Column -->
+											<div class="col-md-6">
+												<p style="margin-bottom: 5px;">
+													Certificates &nbsp;&nbsp;
+												</p>
+												<ul style="margin-top: 0; padding-left: 40px;">
+													<li>
+														<strong>정보처리기사</strong>&nbsp;&nbsp;<span style="font-style: italic; color: #999999; font-size: 0.9em;">2021.08.20</span>
+													</li>
+													<li>
+														<strong>SQLD (SQL 개발자)</strong>&nbsp;&nbsp;<span style="font-style: italic; color: #999999; font-size: 0.9em;">2024.12.13</span>
+													</li>
+													<li>
+														<span style="color: #999999;">ISTQB FL</span>&nbsp;&nbsp;<span style="font-style: italic; color: #999999; font-size: 0.9em;">2022.10.20</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<!-- SKILLS SECTION -->
+				<section class="colorlib-skills" data-section="skills">
+					<div class="colorlib-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<h2 class="colorlib-heading animate-box">Skills</h2>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-3 text-center animate-box">
+								<div class="services color-1">
+									<div class="desc">
+										<h3>Back-End</h3>
+										<p class="text-left">
+											<img src="images/logo/java.png" style="height: 23px; width: 21px;"> Java
+											<br> 
+											<img src="images/logo/spring.png" style="height: 23px;"> Spring
+											<br> 
+											<img src="images/logo/spring.png" style="height: 23px;"> Spring Boot
+											<br>
+											<img src="images/logo/jsp.png" style="height: 23px;"> JSP/JSTL
+											<br>
+											<img src="images/logo/mybatis.png" style="height: 23px;"> MyBatis
+											<br>
+											<img src="images/logo/tomcat.png" style="width: 23px; height: 23px;"> Apache Tomcat
+											<br>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 text-center animate-box">
+								<div class="services color-2">
+									<div class="desc">
+										<h3>DATABASE</h3>
+										<p class="text-left">
+											<img src="images/logo/mysql.png" style="height: 23px;">
+											MySql<br> <img src="images/logo/mariadb.png"
+												style="height: 23px; width: 23px;"> MariaDB<br> <img
+												src="images/logo/oracledb.png" style="height: 23px;">
+											OracleDB<br> &nbsp;<br>&nbsp;<br>
+											<br>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 text-center animate-box">
+								<div class="services color-3">
+									<div class="desc">
+										<h3>Front-End</h3>
+										<p class="text-left">
+											<img src="images/logo/html.png" style="height: 23px;"> HTML5<br> 
+											<img src="images/logo/css.png" style="height: 23px;"> CSS<br> 
+											<img src="images/logo/js.png" style="height: 23px;"> JS/JQuery<br> 
+											<img src="images/logo/boot.png" style="height: 18px;"> BootStrap<br> &nbsp;<br>&nbsp;<br>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 text-center animate-box">
+								<div class="services color-4">
+									<div class="desc">
+										<h3>TOOL</h3>
+										<p class="text-left">
+											<img src="images/logo/eclipse.png" style="height: 23px; width: 22px;"> Eclipse<br> 
+											<img src="images/logo/sts4.png" style="height: 23px;"> STS4<br>
+											<img src="images/logo/HeidiSQL.png" style="height: 23px;"> HeidiSQL<br>
+											<img src="images/logo/github.png" style="height: 23px;"> Github<br> 
+											<img src="images/logo/aws.jpg" style="height: 20px;"> AWS<br> &nbsp;<br>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- RESUME SECTION -->
+				<section class="colorlib-resume" data-section="resume">
+					<div class="colorlib-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<span class="heading-meta">이력서</span>
+								<h2 class="colorlib-heading animate-box">Resume</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 animate-box"
+								data-animate-effect="fadeInLeft">
+								<div class="fancy-collapse-panel">
+									<div class="panel-group" id="accordion" role="tablist"
+										aria-multiselectable="true">
+
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingOne1">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion"
+														href="#collapseOne1" aria-expanded="true"
+														aria-controls="collapseOne"> <img
+														src="images/goodee.png" width="30px" height="30px">
+														구디아카데미 수료 <span>2023.04.05 ~ 2023.09.26</span>
+													</a>
+												</h4>
+											</div>
+											<div id="collapseOne1" class="panel-collapse collapse in"
+												role="tabpanel" aria-labelledby="headingOne">
+												<div class="panel-body">
+													<p class="colorlib-heading animate-box">클라우드 활용 자바개발자
+														양성과정</p>
+														<span class="fontRed">2024.08.26 ~ 2025.02.24(총119일 / 946시간)</span><br>
+														&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: bold">사용기술</span>
+													<ul>
+														<li>Front-End: Html, CSS, JavaScript, Jquery, JSP</li>
+														<li>Back-End: JAVA, Spring Framework, MyBatis,
+															Tomcat, Git</li>
+														<li>Data Base: Maria DB, Oracle DB</li>
+													</ul>
+													<ul>
+														<li><strong>1개월차</strong><br>
+															Eclipse IDE와 MySQL의 사용법을 익혔습니다.<br>
+															Dynamic Web Project로 JSP를 생성, HTML과 Java의 기본 문법을 학습했습니다.
+														</li>
+														<li><strong>2개월차</strong><br>
+															Java, JSTL 그리고 CSS와 BootStrap의 적용 방법에 대해 학습했습니다.<br>
+															MySQL로 계층형 쿼리, group by 함수 등에 대해 학습하였고 Github 사용법에 대해 알게 되었습니다.<br>
+															MySQL를 연동하여 사용자 게시판을 제작했습니다.
+														</li>
+														<li><strong>3개월차</strong><br>
+															앞서 배운 기술들과 JavaScript(JQuery) 그리고 Github을 활용하여,<br>
+															세미 팀프로젝트(쇼핑몰 웹사이트)를 제작했습니다.<br>
+															스토리보드 제작, 담당업무 분배와 일정 관리 등을 통해 협업을 알게 되었습니다.
+														</li>
+														<li><strong>4개월차</strong><br>
+															Servlet의 개념에 대해 배워 Model 기반의 실습을 진행하였습니다.<br>
+															Spring Framework의 사용법을 익히고 Spring Boot, MyBatis를 이용한 MVC 패턴 프로젝트를 구현하는 방법을 실습했습니다.
+														</li>
+														<li><strong>5개월차</strong><br>
+															스프링 부트 기반의 파이널 팀 프로젝트를 진행하였습니다.<br>
+															요구사항 명세서, ERD 설계, DB설계 등 산출물을 제작했습니다.<br>
+															로그인, 공지사항, 시설관리, 인사관리, 근태관리, 강의관리, 결재관리 파트 출력을 담당하여 학원 그룹웨어 시스템을 구현했습니다.
+														</li>
+														<li><strong>6개월차</strong><br>
+															AWS를 활용한 Ubuntu 서버 세팅 및 프로젝트를 배포하였습니다.<br>
+															Spring Security, JPA의 실습을 진행하였습니다.
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingTwo2">
+												<h4 class="panel-title">
+													<a class="collapsed" data-toggle="collapse"
+														data-parent="#accordion" href="#collapseTwo2"
+														aria-expanded="false" aria-controls="collapseTwo"> <img
+														src="images/uni.PNG" width="30px" height="30px">&nbsp;
+														순천향대학교 의료IT공학과 졸업
+													</a>
+												</h4>
+											</div>
+											<div id="collapseTwo2" class="panel-collapse collapse"
+												role="tabpanel" aria-labelledby="headingTwo">
+												<div class="panel-body">
+													<span style="font-weight: bold">의료IT공학과 전공</span>
+													<ul>
+														<li>2018.03 ~ 2022.02 (졸업)</li>
+														<li>학점 : 3.74 / 4.5</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingThree3">
+												<h4 class="panel-title">
+													<a class="collapsed" data-toggle="collapse"
+														data-parent="#accordion" href="#collapseThree3"
+														aria-expanded="false" aria-controls="collapseThree"> <img
+														src="images/highschool.PNG" width="30px" height="30px">
+														수원여자고등학교 졸업
+													</a>
+												</h4>
+											</div>
+											<div id="collapseThree3" class="panel-collapse collapse"
+												role="tabpanel" aria-labelledby="headingThree">
+												<div class="panel-body">
+													<span style="font-weight: bold">이과계열</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- project section 시작 -->
+				<section class="colorlib-project" data-section="project">
+					<div class="colorlib-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<span class="heading-meta">프로젝트</span>
+								<h2 class="colorlib-heading animate-box">PROJECT</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 animate-box"
+								data-animate-effect="fadeInLeft">
+								<div class="fancy-collapse-panel">
+									<div class="panel-group" id="accordion" role="tablist"
+										aria-multiselectable="true">
+										<!-- 파이널 팀 프로젝트 -->
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingOne">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion"
+														href="#collapseOne" aria-expanded="true"
+														aria-controls="collapseOne">[파이널 팀 프로젝트]  Academy 그룹웨어<span>
+															[개발인원: 5명]</span></a>
+												</h4>
+											</div>
+
+											<div id="collapseOne" class="panel-collapse collapse in"
+												role="tabpanel" aria-labelledby="headingOne">
+												<div class="panel-body">
+													<table class="table">
+														<tr>
+															<td colspan="2"> 
+																<p class="colorlib-heading animate-box fadeInUp animated">
+																	Academy 그룹웨어
+																	<span style="all: unset; letter-spacing: normal; font-size: 0.8em; color: gray;">2025-01-02 ~ 2025-02-10</span>
+																</p>
+																<p style="font-size: 12px; color: blue;">이미지를 누르시면 배포 중인 해당 사이트를 확인하실 수있습니다.</p> 
+																<a href="http://3.37.159.55/academy/login" target="_blank">
+																	<div class="image-container">
+																		<img src="images/finalprj.PNG" class="hover-effect"
+																		width="90%" height="70%">
+																	</div>																	
+																</a>
+															</td>
+														</tr>
+														<tr>
+															<td width="100" style="display: flex; gap: 10px;">
+																<button type="button" class="btn btn-primary"
+																	onclick="window.open('http://3.37.159.55/academy/login')">AWS</button>
+																<button type="button" class="btn btn-primary"
+																onclick="window.open('https://github.com/gd86-academy/academy')">GITHUB</button> 
+																<button type="button" class="btn btn-primary"
+																	onclick="window.open('https://hyerin716.github.io/images/academy_ERD.png')">ERD</button> 
+																<button type="button" class="btn btn-primary"
+																onclick="window.open('https://www.figma.com/design/Vc4psYCSXfQMj57Ji53wMM/figma?node-id=0-1&t=chVpp0tTzGiJ30mi-1')">FIGMA</button>
+																<button type="button" class="btn btn-primary"
+																onclick="window.open('https://docs.google.com/spreadsheets/d/1TFGHXgTHKRkT5B8ufzv-7dTCbjtDNTQ7VarB5krVfHc/edit?usp=sharing')">요구사항 정의서</button>
+															</td>
+														</tr>
+													</table>
+													<hr>
+													<p>
+														<strong>개요</strong><br>
+														<span class="custom-t">
+															- Spring Boot기반으로 MySQL과 MyBatis를 활용하여 제작한 학원 그룹웨어 시스템.<br> 
+															- 강의 관리, 근태 관리, 결재 관리 기능을 중심으로 시스템을 개발.<br>
+															- 권한에 따라 인사팀, 행정팀, 운영팀이 사용할 수 있는 기능을 차별화하여 구현.
+														</span>
+													</p>
+													<p>
+														<strong>테스트 계정 & 방법</strong><br>
+														<span class="custom-t">
+															인사팀 - ID : 92&nbsp; PW : 1234<br>
+															운영팀 - ID : 99&nbsp; PW : 1234<br>
+															행정팀 - ID : 101&nbsp; PW : 1234
+														</span>
+													</p>
+													<p style="margin-bottom: 0;">
+														<strong class="mb-5">담당기능</strong><br>
+														<div class="col-md-12">
+															<!-- 왼쪽 컬럼 -->
+															<div class="col-md-6">
+																<span class="custom-t">
+																	1. <span style="color:#6799FF; font-weight: bold;">강의 관리</span>
+																	<ul class="custom-t">
+																		<li>강의 리스트 출력 구현</li>
+																		<li>강의 상세 정보 출력 구현</li>
+																		<li>행정팀만 강의 수정이 가능하도록 구현</li>
+																		<li>행정팀만  강의 삭제가 가능하도록 구현</li>
+																	</ul>
+																</span>
+																<span class="custom-t">
+																	2. <span style="color:#6799FF; font-weight: bold;">결재관리 - 근태신청</span>
+																	<ul>
+																		<li>연차/반차/병가/공가 선택하여 근태 신청 구현</li>
+																		<li>파일 다중 첨부 기능 구현</li>
+																		<li>결재선 트리 형태로 1~3명까지 선택 기능 구현</li>
+																		<li>미입력 항목에 대한 유효성 검사 및 잔여 연차를 계산하여 연차 개수 유효성 검사 구현</li>
+																	</ul>
+																</span>
+																<span class="custom-t">
+																	5. <span style="color:#6799FF; font-weight: bold;">결재 관리 - 결재 완료 목록</span>
+																	<ul>
+																		<li>결재 완료 목록 조회(자신이 결재한 신청서 확인)</li>
+																		<li>결재 완료 신청서 상세 조회 및 첨부파일 다운로드 구현</li>
+																	</ul>
+																</span>
+															</div>
+															<!-- 오른쪽 컬럼 -->
+															<div class="col-md-6">
+																<span class="custom-t">
+																	3. <span style="color:#6799FF; font-weight: bold;">결재 관리 - 나의 신청 목록</span>
+																	<ul class="custom-t">
+																		<li>나의 신청 목록 조회(근태/강의 신청서)(강의 신청서는 운영팀만 조회 가능하도록 구현)</li>
+																		<li>신청 목록 상세 조회(결재선 상태 표시 및 첨부파일 다운로드 구현)</li>
+																		<li>신청서 수정 및 회수 기능 구현(결재단계와 상태에 따른 제어)</li>
+																		<li>반려된 신청서에 대한 재신청 기능 구현</li>
+																	</ul>
+																</span>
+																<span class="custom-t">
+																	4. <span style="color:#6799FF; font-weight: bold;">결재 관리 - 결재 대기 목록</span>
+																	<ul>
+																		<li>결재 대기 목록 조회(결재 단계 및 결재 순위 기준)</li>
+																		<li>결재 대기 신청서 상세 조회(첨부파일 다운로드 구현)</li>
+																		<li>결재 승인 (결재 단계 +1, 승인 후 다음 결재자에게 순번 전달) 구현</li>
+																		<li>결재 반려 (반려 사유 입력 및 반려 상태로 변경) 구현</li>
+																	</ul>
+																</span>
+																
+															</div>
+														</div>
+													</p>
+													
+													<table class="table">
+														<tr>
+															<td><strong>개발환경</strong></td>
+															<td>
+																- Language : <span style="color: #999999;">HTML5, CSS3, Java, SQL, JavaScript, Ajax</span><br> 
+																- Framework : <span style="color: #999999;">SpringBoot, Thymeleaf</span><br>
+																- Library : <span style="color: #999999;">JSTL, JQuery, Lombok, MyBatis, Maven, BootStrap</span><br> 
+																- Database : <span style="color: #999999;">MariaDB</span><br>
+																- TOOL : <span style="color: #999999;">Spring-Tool-Suite4, HeidiSQL</span><br>
+																- WAS : <span style="color: #999999;">Apache Tomcat10</span><br> 
+																- OS : <span style="color: #999999;">window11</span><br>
+																- 형상관리서버 : <span style="color: #999999; ">Github</span>
+															</td>
+														</tr>
+														<tr>
+															<td><strong>배포환경</strong></td>
+															<td>
+																- Cloud: <span style="color: #999999; ">AWS(Lightsail)</span><br> 
+																- Database : <span style="color: #999999; ">MariaDB</span><br> 
+																- WAS : <span style="color: #999999; ">Apache Tomcat10	</span>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</div>
+										</div>
+
+										<!-- 쇼핑몰 팀 프로젝트 -->
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingThree">
+												<h4 class="panel-title">
+													<a class="collapsed" data-toggle="collapse"
+														data-parent="#accordion" href="#collapseThree"
+														aria-expanded="false" aria-controls="collapseThree">
+														[세미 팀 프로젝트] dressmall 쇼핑몰 <span>[개발인원 : 3명]</span>
+													</a>
+												</h4>
+											</div>
+											<div id="collapseThree" class="panel-collapse collapse"
+												role="tabpanel" aria-labelledby="headingThree">
+												<div class="panel-body">
+													<table class="table">
+														<tr>
+															<td colspan="2">
+																<p class="colorlib-heading animate-box fadeInUp animated">
+																	dressmall 쇼핑몰
+																	<span style="all: unset; letter-spacing: normal; font-size: 0.8em; color: gray;">2024-11-18 ~ 2024-12-05</span>
+																</p>
+																<p style="font-size: 12px; color: blue;">이미지를 누르시면 배포 중인 해당 사이트를 확인하실 수있습니다.</p> 
+																<a  target="_blank">
+																	<div class="image-container">
+																		<img src="images/semiprj.PNG" class="hover-effect" width="90%" height="70%">
+																	</div>
+																</a>
+															</td>
+														</tr>
+														<tr>
+															<td width="100" style="display: flex; gap: 10px;">
+																<button type="button" class="btn btn-primary"
+																	onclick="window.open('')">AWS</button>
+																<button type="button" class="btn btn-primary"
+																onclick="window.open('https://github.com/dressmall/dressmall')">GITHUB</button> 
+																<button type="button" class="btn btn-primary"
+																	onclick="window.open('https://hyerin716.github.io/images/dressmall_ERD.PNG')">ERD</button> 
+																<button type="button" class="btn btn-primary"
+																onclick="window.open('https://www.figma.com/design/pJs7J0gCQTbmNr6rvIiY7r/mall?node-id=0-1&t=BGSrdkj5KjkI5tr6-1')">FIGMA</button>
+																<button type="button" class="btn btn-primary"
+																onclick="window.open('https://docs.google.com/spreadsheets/d/1xnuczbTNNffsd5md1vO8rszntUMg5dZtpbzQZoLez1A/edit?usp=sharing')">요구사항 정의서</button>
+															</td>
+														</tr>
+													</table>	
+													<hr>
+													<p>
+														<strong>개요</strong><br>
+														<span class="custom-t">
+															- Spring Boot를 기반으로 MySQL과 MyBatis를 활용한 구현된 옷 쇼핑몰 웹사이트 제작.<br> 
+															- 사용자와 관리자 권한을 나눠서 페이지 제작<br><br>
+															사용자가 원하는 상품을 장바구니에 담고 구매하며, 구매한 상품에 대해 리뷰를 남길 수 있는 옷 쇼핑몰 웹사이트. <br>
+															관리자는 상품, 카테고리, 회원, 관리자 관리 기능을 제공하며, 주문이 들어오면 해당 상품의 배송 처리까지 원활하게 진행할 수 있도록 구현되었다.
+														</span>
+													</p>
+													<p>
+														<strong>테스트 계정 & 방법</strong><br>
+														<span class="custom-t">
+															관리자 페이지 <br>
+															ID : staff1 / PW :1234 <br>
+															고객 페이지 <br>
+															ID : / PW : 
+														</span>
+													</p>
+													<p style="margin-bottom: 0;">
+														<strong class="mb-5">담당기능</strong><br>
+														<div class="col-md-12">
+															<!-- 왼쪽 컬럼 -->
+															<div class="col-md-6">
+																<span style="color:dimgrey; font-weight: bold;">관리자 페이지</span><br>
+																<span class="custom-t">
+																	1. <span style="color:#6799FF; font-weight: bold;">카테고리 관리</span>
+																	<ul class="custom-t">
+																		<li>카테고리 리스트 출력 (페이징 처리)</li>
+																		<li>카테고리 추가 기능 구현</li>
+																		<li>카테고리 삭제 기능 구현</li>
+																	</ul>
+																</span>
+																<span class="custom-t">
+																	2. <span style="color:#6799FF; font-weight: bold;">상품 관리</span>
+																	<ul>
+																		<li>상품 리스트 카드 형식으로 출력되도록 구현</li>
+																		<li>상품 상세 조회 기능 구현</li>
+																		<li>상품 등록 기능(파일 첨부 ,카테고리 선택, 유효성 검사 포함)</li>
+																		<li>상품 삭제 기능 구현</li>
+																	</ul>
+																</span>
+															</div>
+															<!-- 오른쪽 컬럼 -->
+															<div class="col-md-6">
+																<span class="custom-t">
+																	<span style="color:dimgrey; font-weight: bold;">고객 페이지</span><br>
+																	1. <span style="color:#6799FF; font-weight: bold;">메인화면</span>
+																	<ul class="custom-t">
+																		<li>로그인 상태에 따른 회원/비회원 구분해서 페이지 구현</li>
+																		<li>카테고리별 상품 출력되도록 구현</li>
+																		<li>재고없는 경우 품절 표시되도록 구현</li>
+																	</ul>
+																</span>
+																<span class="custom-t">
+																	2. <span style="color:#6799FF; font-weight: bold;">상품 상세 페이지 </span>
+																	<ul>
+																		<li>상품 상세 페이지 조회</li>
+																		<li>해당 상품 개수 정해서 장바구니에 추가되도록 기능 구현</li>
+																	</ul>
+																</span>
+																<span class="custom-t">
+																	3. <span style="color:#6799FF; font-weight: bold;">주문 목록 페이지</span>
+																	<ul>
+																		<li> 주소 유효성 체크 구현</li>
+																	</ul>
+																</span>																
+															</div>
+														</div>
+													</p>
+													<table class="table">
+														<tr>
+															<td><strong>개발환경</strong></td>
+															<td>
+																- Language : <span style="color: #999999;">HTML5, CSS3, Java, SQL, JavaScript, Ajax</span><br> 
+																- Framework : <span style="color: #999999;">SpringBoot</span><br>
+																- Library : <span style="color: #999999;">JSTL, JQuery, Lombok, MyBatis, Maven, BootStrap</span><br> 
+																- Database : <span style="color: #999999;">MariaDB</span><br>
+																- TOOL : <span style="color: #999999;">Spring-Tool-Suite4, HeidiSQL</span><br>
+																- WAS : <span style="color: #999999;">Apache Tomcat10</span><br> 
+																- OS : <span style="color: #999999;">window11</span><br>
+																- 형상관리서버 : <span style="color: #999999; ">Github</span>
+															</td>
+														</tr>
+														<tr>
+															<td><strong>배포환경</strong></td>
+															<td>
+																- Cloud: <span style="color: #999999; ">AWS(Lightsail)</span><br> 
+																- Database : <span style="color: #999999; ">MariaDB</span><br> 
+																- WAS : <span style="color: #999999; ">Apache Tomcat10	</span>
+															</td>
+														</tr>
+													</table>
+													
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+			<!-- end:colorlib-main -->
+		</div>
+		<!-- end:container-wrap -->
+	</div>
+	<!-- end:colorlib-page -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+
+
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
